@@ -1,0 +1,9 @@
+services:
+  upi-checkout-converter:
+    build: .
+    container_name: upi-checkout-converter
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9766:8080"
+volumes:
+  upi-checkout-converter-runtime:
